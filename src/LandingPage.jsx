@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   BarChart3, TrendingUp, Target, Database, PieChart, Activity, 
-  Mail, Phone, Linkedin, BookOpenText, CheckCircle, Zap 
+  Mail, Phone, Linkedin, BookOpenText, CheckCircle, Zap, Shield, Globe 
 } from 'lucide-react';
 
 export default function LandingPage() {
@@ -10,7 +10,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white font-sans">
       
-      {/* 1. HERO SECTION */}
+      {/* 1. HERO SECTION - High Impact */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
         {/* Abstract Data Background */}
         <div className="absolute inset-0 opacity-10">
@@ -37,22 +37,22 @@ export default function LandingPage() {
         </div>
         
         <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
-          <Database className="w-16 h-16 mx-auto mb-4 text-teal-400" />
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Visualizando el Espacio Muestral:<br />
-            <span className="text-teal-400">La Brújula para la Incertidumbre Empresarial</span>
+          <Globe className="w-16 h-16 mx-auto mb-4 text-teal-400 animate-pulse" />
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+            Maestría en la Incertidumbre:<br />
+            <span className="text-teal-400">Espacio Muestral y Ojivas Aplicadas</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            El 50% de las iniciativas de negocio fallan debido a un alcance incompleto de riesgos. Las decisiones deben basarse en la exploración sistemática de **todas las posibilidades** y el análisis de **umbrales de cumplimiento**.
+          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-4xl mx-auto">
+            Transformamos la teoría estadística en **inteligencia de negocios accionable**. Deje de adivinar el futuro y comience a **mapear cada posibilidad** para una toma de decisiones blindada.
           </p>
-          <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
-            Descubrir el Universo de Datos
+          <button className="bg-teal-500 hover:bg-teal-400 text-white font-semibold px-12 py-4 rounded-full text-lg transition-all transform hover:scale-105 shadow-2xl">
+            Ver Casos de Éxito
           </button>
         </div>
       </section>
 
-      {/* 2. FUNDAMENTOS CLAVE: Súper Expandido */}
-      <section className="py-20 bg-white">
+      {/* 2. FUNDAMENTOS CLAVE: Rigor y Claridad */}
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
             Fundamentos Clave: El Rigor Técnico, Explicado para Gerentes
@@ -61,55 +61,57 @@ export default function LandingPage() {
             El valor de la estadística radica en su capacidad para modelar el caos y definir metas claras.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-12">
             {/* Espacio Muestral Card - Máxima Profundidad */}
-            <div className="bg-gray-50 rounded-xl p-8 shadow-inner border border-gray-100">
+            <div className="bg-gray-50 rounded-xl p-8 shadow-2xl border-t-4 border-slate-900 transition-shadow duration-300 hover:shadow-teal-500/50">
               <div className="flex items-start mb-4">
                 <PieChart className="w-10 h-10 text-slate-900 mr-4 flex-shrink-0" strokeWidth={1.5} />
-                <h3 className="text-2xl font-bold text-slate-900">Espacio Muestral ($\Omega$): La Mapeo de la Incertidumbre</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Espacio Muestral (Omega): El Mapeo de la Incertidumbre</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                El $\Omega$ es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es **estratégico**: delimita el universo de análisis y previene el **sesgo de confirmación** (buscar solo el éxito) al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de *Scoping* de la incertidumbre.
+                El **Espacio Muestral (Ω)** es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es **estratégico**: delimita el universo de análisis y previene el **sesgo de confirmación** al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de *Scoping* de la incertidumbre.
               </p>
-                            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4 mt-4">
-                <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo es matemáticamente consistente.</li>
+              
+              <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
+                <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo sea matemáticamente consistente.</li>
                 <li>**Función en BI:** Se utiliza para la creación de **árboles de decisión** y simulaciones de **riesgo extremo** (Ej. Modelado de "Cisnes Negros").</li>
                 <li>**Analogía:** Es la lista completa de ingredientes antes de hornear; si falta uno, el resultado es incierto.</li>
               </ul>
             </div>
 
             {/* Ojivas Card - Máxima Profundidad */}
-            <div className="bg-gray-50 rounded-xl p-8 shadow-inner border border-gray-100">
+            <div className="bg-gray-50 rounded-xl p-8 shadow-2xl border-t-4 border-teal-500 transition-shadow duration-300 hover:shadow-slate-900/50">
               <div className="flex items-start mb-4">
                 <Activity className="w-10 h-10 text-slate-900 mr-4 flex-shrink-0" strokeWidth={1.5} />
                 <h3 className="text-2xl font-bold text-slate-900">Ojivas: El Umbral de Cumplimiento y Control de Proceso</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                La Ojiva (o *Curva de Frecuencia Acumulada*) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica **dónde se concentra la mayoría de los datos** y, crucialmente, dónde están los **percentiles** (P90, P95).
+                La **Ojiva** (*Curva de Frecuencia Acumulada*) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica dónde están los **percentiles** (P90, P95).
               </p>
-                            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4 mt-4">
+              
+              <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
                 <li>**Aplicación Clave:** Fija **SLAs (Niveles de Servicio)**. Si el P90 de entrega es de 5 días, ese se convierte en el estándar de la promesa al cliente.</li>
-                <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana y prolongada indica ineficiencia y alta variabilidad.</li>
+                <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana indica ineficiencia y alta variabilidad.</li>
                 <li>**Uso en Finanzas:** Determina el **Valor en Riesgo (VaR)** al identificar el umbral de pérdida acumulada.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      
-      {/* 3. APLICACIONES SECTION (Con Imágenes de Apoyo) */}
-      <section className="py-20 bg-gray-50">
+
+      {/* 3. APLICACIONES SECTION (Con Shadow y Animación) */}
+      <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
-            Casos de Uso Industrial: Convertir Teoría en Ventaja Competitiva
+            Aplicaciones Estratégicas: Soluciones de Alto Impacto
           </h2>
-          <p className="text-center text-gray-600 mb-16 text-lg max-w-2xl mx-auto">
-            Demostraciones prácticas del valor de la visualización estadística en áreas clave de la ingeniería de negocios.
+          <p className="text-center text-gray-600 mb-16 text-lg max-w-3xl mx-auto">
+            Transformamos la teoría en ventajas competitivas cuantificables.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Caso 1: Logística */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Target className="w-10 h-10 text-teal-500 mr-4" strokeWidth={1.5} />
                 <div>
@@ -120,12 +122,16 @@ export default function LandingPage() {
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se traza la frecuencia acumulada del tiempo de entrega de proveedores. Esto permite a la gerencia establecer un **inventario de seguridad óptimo** para cubrir el 95% de la demanda, reduciendo costos.
               </p>
-                          </div>
+              
+
+[Image of a logistics distribution center with data charts overlaid showing delivery times]
+
+            </div>
 
             {/* Caso 2: Riesgo Financiero */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-slate-900 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
-                <BarChart3 className="w-10 h-10 text-teal-500 mr-4" strokeWidth={1.5} />
+                <Shield className="w-10 h-10 text-slate-900 mr-4" strokeWidth={1.5} />
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">Modelado de Riesgo Financiero</h3>
                   <p className="text-sm text-gray-500 font-medium">Uso: Espacio Muestral</p>
@@ -134,10 +140,11 @@ export default function LandingPage() {
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se define el **universo de escenarios** de mercado posibles (tasas de interés, inflación) en simulaciones (ej. Monte Carlo). Esto asegura que los modelos de inversión optimicen el retorno ante cualquier riesgo, incluso el menos probable.
               </p>
-                          </div>
+              
+            </div>
 
             {/* Caso 3: Churn */}
-            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <TrendingUp className="w-10 h-10 text-teal-500 mr-4" strokeWidth={1.5} />
                 <div>
@@ -148,7 +155,8 @@ export default function LandingPage() {
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se grafica la frecuencia acumulada de la permanencia de los clientes. Esto permite identificar el **P25**, el punto en el tiempo donde el 25% de los clientes más propensos a irse aún están activos, detonando ofertas de retención justo a tiempo.
               </p>
-                          </div>
+              
+            </div>
           </div>
         </div>
       </section>
@@ -163,11 +171,11 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Espacio Muestral (Venn) */}
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-slate-900 mb-8">Espacio Muestral</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-8">Espacio Muestral (Ω)</h3>
               <svg viewBox="0 0 300 200" className="w-full max-w-md mx-auto">
                 <rect width="300" height="200" fill="#f8fafc" rx="8" />
                 <text x="150" y="25" textAnchor="middle" className="text-sm font-semibold fill-slate-700">
-                  Universo de Resultados Ω
+                  Universo de Resultados
                 </text>
                 <circle cx="120" cy="110" r="60" fill="none" stroke="#14b8a6" strokeWidth="2.5" opacity="0.7" />
                 <text x="120" y="110" textAnchor="middle" className="text-xs fill-slate-600">Riesgo A</text>
@@ -213,7 +221,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      
+
       {/* 5. CONCLUSIÓN Y RIGOR METODOLÓGICO */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
@@ -230,13 +238,13 @@ export default function LandingPage() {
               <CheckCircle className="w-8 h-8 text-teal-500 mb-4" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Conclusión: El Dominio de la Comunicación</h3>
               <p className="text-gray-700 leading-relaxed">
-                La estadística no es solo matemática; es el lenguaje universal para gestionar la incertidumbre. Dominar el $\Omega$ es conocer los límites del problema, y la Ojiva es la herramienta para medir el rendimiento contra esos límites. Este proyecto demuestra que la **ingeniería es la capacidad de traducir la complejidad en decisiones claras y comunicables**.
+                La estadística no es solo matemática; es el lenguaje universal para gestionar la incertidumbre. Dominar el Omega es conocer los límites del problema, y la Ojiva es la herramienta para medir el rendimiento contra esos límites. Este proyecto demuestra que la **ingeniería es la capacidad de traducir la complejidad en decisiones claras y comunicables**.
               </p>
             </div>
 
             {/* Referencias y Metodología */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-500">
-              <BookOpenText className="w-8 h-8 text-teal-500 mb-4" />
+            <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-slate-900">
+              <BookOpenText className="w-8 h-8 text-slate-900 mb-4" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Rigor Metodológico y Referencias (IEEE/APA)</h3>
               <p className="text-gray-700 mb-3">
                 El desarrollo de esta página se centró en la **claridad sobre la fórmula**, el uso de **Analogías No Técnicas** y la **Visualización Schemática (SVG)** para simplificar conceptos profundos.
@@ -263,7 +271,7 @@ export default function LandingPage() {
             <p className="text-xl text-gray-300 mb-10">
               Transforma la incertidumbre en planificación estratégica con herramientas estadísticas de valor.
             </p>
-            <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-12 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-xl">
+            <button className="bg-teal-500 hover:bg-teal-400 text-white font-semibold px-12 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-xl">
               Comenzar Ahora
             </button>
           </div>
