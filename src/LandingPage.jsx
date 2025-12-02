@@ -71,7 +71,7 @@ export default function LandingPage() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 El $\Omega$ es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es **estratégico**: delimita el universo de análisis y previene el **sesgo de confirmación** (buscar solo el éxito) al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de *Scoping* de la incertidumbre.
               </p>
-              <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4 mt-4">
                 <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo es matemáticamente consistente.</li>
                 <li>**Función en BI:** Se utiliza para la creación de **árboles de decisión** y simulaciones de **riesgo extremo** (Ej. Modelado de "Cisnes Negros").</li>
                 <li>**Analogía:** Es la lista completa de ingredientes antes de hornear; si falta uno, el resultado es incierto.</li>
@@ -87,7 +87,7 @@ export default function LandingPage() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 La Ojiva (o *Curva de Frecuencia Acumulada*) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica **dónde se concentra la mayoría de los datos** y, crucialmente, dónde están los **percentiles** (P90, P95).
               </p>
-              <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4 mt-4">
                 <li>**Aplicación Clave:** Fija **SLAs (Niveles de Servicio)**. Si el P90 de entrega es de 5 días, ese se convierte en el estándar de la promesa al cliente.</li>
                 <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana y prolongada indica ineficiencia y alta variabilidad.</li>
                 <li>**Uso en Finanzas:** Determina el **Valor en Riesgo (VaR)** al identificar el umbral de pérdida acumulada.</li>
@@ -97,7 +97,7 @@ export default function LandingPage() {
         </div>
       </section>
       
-      {/* 3. APLICACIONES SECTION (Mantenido con Rigor) */}
+      {/* 3. APLICACIONES SECTION (Con Imágenes de Apoyo) */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
@@ -117,10 +117,10 @@ export default function LandingPage() {
                   <p className="text-sm text-gray-500 font-medium">Uso: Ojivas</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se traza la frecuencia acumulada del tiempo de entrega de proveedores. Esto permite a la gerencia establecer un **inventario de seguridad óptimo** para cubrir el 95% de la demanda, reduciendo costos.
               </p>
-            </div>
+                          </div>
 
             {/* Caso 2: Riesgo Financiero */}
             <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
@@ -131,10 +131,10 @@ export default function LandingPage() {
                   <p className="text-sm text-gray-500 font-medium">Uso: Espacio Muestral</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se define el **universo de escenarios** de mercado posibles (tasas de interés, inflación) en simulaciones (ej. Monte Carlo). Esto asegura que los modelos de inversión optimicen el retorno ante cualquier riesgo, incluso el menos probable.
               </p>
-            </div>
+                          </div>
 
             {/* Caso 3: Churn */}
             <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
@@ -145,10 +145,10 @@ export default function LandingPage() {
                   <p className="text-sm text-gray-500 font-medium">Uso: Ojivas</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 Se grafica la frecuencia acumulada de la permanencia de los clientes. Esto permite identificar el **P25**, el punto en el tiempo donde el 25% de los clientes más propensos a irse aún están activos, detonando ofertas de retención justo a tiempo.
               </p>
-            </div>
+                          </div>
           </div>
         </div>
       </section>
@@ -213,8 +213,8 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
-      {/* 5. CONCLUSIÓN Y RIGOR METODOLÓGICO (Cumple las secciones 5 y 6 de la rúbrica) */}
+      
+      {/* 5. CONCLUSIÓN Y RIGOR METODOLÓGICO */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
