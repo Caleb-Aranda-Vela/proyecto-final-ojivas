@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   BarChart3, TrendingUp, Target, Database, PieChart, Activity, 
-  Mail, Phone, Linkedin, BookOpenText, CheckCircle, Zap, Shield, Globe 
+  Mail, Phone, Linkedin, BookOpenText, CheckCircle, Zap, Shield, Globe, Layers, LineChart, Code
 } from 'lucide-react';
 
 export default function LandingPage() {
@@ -66,14 +66,14 @@ export default function LandingPage() {
             <div className="bg-gray-50 rounded-xl p-8 shadow-2xl border-t-4 border-slate-900 transition-shadow duration-300 hover:shadow-teal-500/50">
               <div className="flex items-start mb-4">
                 <PieChart className="w-10 h-10 text-slate-900 mr-4 flex-shrink-0" strokeWidth={1.5} />
-                <h3 className="text-2xl font-bold text-slate-900">Espacio Muestral (Omega): El Mapeo de la Incertidumbre</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Espacio Muestral (Omega): La Mapeo de la Incertidumbre</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                El **Espacio Muestral (Ω)** es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es **estratégico**: delimita el universo de análisis y previene el **sesgo de confirmación** al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de *Scoping* de la incertidumbre.
+                El Espacio Muestral (Ω) es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es estratégico: delimita el universo de análisis y previene el **sesgo de confirmación** al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de Scoping de la incertidumbre.
               </p>
               
               <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
-                <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo sea matemáticamente consistente.</li>
+                <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo es matemáticamente consistente.</li>
                 <li>**Función en BI:** Se utiliza para la creación de **árboles de decisión** y simulaciones de **riesgo extremo** (Ej. Modelado de "Cisnes Negros").</li>
                 <li>**Analogía:** Es la lista completa de ingredientes antes de hornear; si falta uno, el resultado es incierto.</li>
               </ul>
@@ -86,12 +86,12 @@ export default function LandingPage() {
                 <h3 className="text-2xl font-bold text-slate-900">Ojivas: El Umbral de Cumplimiento y Control de Proceso</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                La **Ojiva** (*Curva de Frecuencia Acumulada*) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica dónde están los **percentiles** (P90, P95).
+                La Ojiva (Curva de Frecuencia Acumulada) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica dónde están los **percentiles** (P90, P95).
               </p>
               
               <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
                 <li>**Aplicación Clave:** Fija **SLAs (Niveles de Servicio)**. Si el P90 de entrega es de 5 días, ese se convierte en el estándar de la promesa al cliente.</li>
-                <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana indica ineficiencia y alta variabilidad.</li>
+                <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana y prolongada indica ineficiencia y alta variabilidad.</li>
                 <li>**Uso en Finanzas:** Determina el **Valor en Riesgo (VaR)** al identificar el umbral de pérdida acumulada.</li>
               </ul>
             </div>
@@ -99,11 +99,50 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 3. APLICACIONES SECTION (Con Shadow y Animación) */}
+      {/* 3. NUEVA SECCIÓN: Metodología Analítica de Vanguardia */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
-            Aplicaciones Estratégicas: Soluciones de Alto Impacto
+            Metodología Analítica de Vanguardia
+          </h2>
+          <p className="text-center text-gray-600 mb-16 text-lg max-w-3xl mx-auto">
+            Nuestro proceso asegura la integridad del dato y la traducibilidad del resultado.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Metodología 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-xl border-b-4 border-teal-500">
+              <Layers className="w-10 h-10 text-teal-500 mb-3" />
+              <h4 className="font-bold text-xl mb-2 text-slate-900">1. Delimitación del Universo ($\Omega$)</h4>
+              <p className="text-sm text-gray-700">
+                La fase inicial es la definición formal y exhaustiva del Espacio Muestral. Esto evita el sesgo de datos y establece los límites de validez de cualquier modelo predictivo o simulador.
+              </p>
+            </div>
+            {/* Metodología 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-xl border-b-4 border-slate-900">
+              <LineChart className="w-10 h-10 text-slate-900 mb-3" />
+              <h4 className="font-bold text-xl mb-2 text-slate-900">2. Análisis de Percentiles y Umbrales</h4>
+              <p className="text-sm text-gray-700">
+                Uso de Ojivas para migrar de la Frecuencia Absoluta a la Frecuencia Acumulada. Este paso crucial permite identificar el **P90 de servicio** o el **P95 de riesgo**, esencial para la planificación de recursos.
+              </p>
+            </div>
+            {/* Metodología 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-xl border-b-4 border-teal-500">
+              <Code className="w-10 h-10 text-teal-500 mb-3" />
+              <h4 className="font-bold text-xl mb-2 text-slate-900">3. Traducción y Comunicación Digital</h4>
+              <p className="text-sm text-gray-700">
+                El resultado del análisis se traduce en formatos interactivos y lenguaje no técnico, permitiendo que el conocimiento pase del ingeniero al gerente de forma **clara y accionable**, cerrando la brecha de comunicación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. APLICACIONES SECTION (Con Shadow y Animación) */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
+            Casos de Uso Industrial: Convertir Teoría en Ventaja Competitiva
           </h2>
           <p className="text-center text-gray-600 mb-16 text-lg max-w-3xl mx-auto">
             Transformamos la teoría en ventajas competitivas cuantificables.
@@ -111,7 +150,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Caso 1: Logística */}
-            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gray-50 rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Target className="w-10 h-10 text-teal-500 mr-4" strokeWidth={1.5} />
                 <div>
@@ -129,7 +168,7 @@ export default function LandingPage() {
             </div>
 
             {/* Caso 2: Riesgo Financiero */}
-            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-slate-900 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gray-50 rounded-xl p-8 shadow-xl border-t-4 border-slate-900 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Shield className="w-10 h-10 text-slate-900 mr-4" strokeWidth={1.5} />
                 <div>
@@ -144,7 +183,7 @@ export default function LandingPage() {
             </div>
 
             {/* Caso 3: Churn */}
-            <div className="bg-white rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gray-50 rounded-xl p-8 shadow-xl border-t-4 border-teal-500 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <TrendingUp className="w-10 h-10 text-teal-500 mr-4" strokeWidth={1.5} />
                 <div>
@@ -161,7 +200,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 4. VISUALIZACIÓN SECTION (Diagramas SVG) */}
+      {/* 5. VISUALIZACIÓN SECTION (Diagramas SVG) */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-16">
@@ -175,7 +214,7 @@ export default function LandingPage() {
               <svg viewBox="0 0 300 200" className="w-full max-w-md mx-auto">
                 <rect width="300" height="200" fill="#f8fafc" rx="8" />
                 <text x="150" y="25" textAnchor="middle" className="text-sm font-semibold fill-slate-700">
-                  Universo de Resultados
+                  Universo de Resultados Ω
                 </text>
                 <circle cx="120" cy="110" r="60" fill="none" stroke="#14b8a6" strokeWidth="2.5" opacity="0.7" />
                 <text x="120" y="110" textAnchor="middle" className="text-xs fill-slate-600">Riesgo A</text>
@@ -222,7 +261,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 5. CONCLUSIÓN Y RIGOR METODOLÓGICO */}
+      {/* 6. CONCLUSIÓN Y RIGOR METODOLÓGICO */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
@@ -238,7 +277,7 @@ export default function LandingPage() {
               <CheckCircle className="w-8 h-8 text-teal-500 mb-4" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Conclusión: El Dominio de la Comunicación</h3>
               <p className="text-gray-700 leading-relaxed">
-                La estadística no es solo matemática; es el lenguaje universal para gestionar la incertidumbre. Dominar el Omega es conocer los límites del problema, y la Ojiva es la herramienta para medir el rendimiento contra esos límites. Este proyecto demuestra que la **ingeniería es la capacidad de traducir la complejidad en decisiones claras y comunicables**.
+                La estadística no es solo matemática; es el lenguaje universal para gestionar la incertidumbre. Dominar el Omega es conocer los límites del problema, y la Ojiva es la herramienta para medir el rendimiento contra esos límites. Este proyecto demuestra que la ingeniería es la capacidad de traducir la complejidad en decisiones claras y comunicables.
               </p>
             </div>
 
@@ -247,7 +286,7 @@ export default function LandingPage() {
               <BookOpenText className="w-8 h-8 text-slate-900 mb-4" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Rigor Metodológico y Referencias (IEEE/APA)</h3>
               <p className="text-gray-700 mb-3">
-                El desarrollo de esta página se centró en la **claridad sobre la fórmula**, el uso de **Analogías No Técnicas** y la **Visualización Schemática (SVG)** para simplificar conceptos profundos.
+                El desarrollo de esta página se centró en la claridad sobre la fórmula, el uso de Analogías No Técnicas y la Visualización Schemática (SVG) para simplificar conceptos profundos.
               </p>
               <ul className="list-disc list-inside text-sm text-gray-600 space-y-1 ml-4">
                 <li>[1] W. Feller, *An Introduction to Probability Theory and Its Applications*. Wiley, 1968.</li>
@@ -259,7 +298,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 6. CTA y Contact Section (Myriam Estrella Ávila Solís) */}
+      {/* 7. CTA y Contact Section (Myriam Estrella Ávila Solís) */}
       <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
           
