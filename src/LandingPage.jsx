@@ -43,7 +43,7 @@ export default function LandingPage() {
             <span className="text-teal-400">Espacio Muestral y Ojivas Aplicadas</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-4xl mx-auto">
-            Transformamos la teoría estadística en **inteligencia de negocios accionable**. Deje de adivinar el futuro y comience a **mapear cada posibilidad** para una toma de decisiones blindada.
+            Transformamos la teoría estadística en inteligencia de negocios accionable. Deje de adivinar el futuro y comience a mapear cada posibilidad para una toma de decisiones blindada.
           </p>
           <button className="bg-teal-500 hover:bg-teal-400 text-white font-semibold px-12 py-4 rounded-full text-lg transition-all transform hover:scale-105 shadow-2xl">
             Ver Casos de Éxito
@@ -69,13 +69,13 @@ export default function LandingPage() {
                 <h3 className="text-2xl font-bold text-slate-900">Espacio Muestral (Omega): La Mapeo de la Incertidumbre</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                El Espacio Muestral (Ω) es el conjunto **exhaustivo de todos los resultados posibles** de un proceso, inversión o experimento. Su valor es estratégico: delimita el universo de análisis y previene el **sesgo de confirmación** al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de Scoping de la incertidumbre.
+                El Espacio Muestral (Ω) es el conjunto exhaustivo de todos los resultados posibles de un proceso, inversión o experimento. Su valor es estratégico: delimita el universo de análisis y previene el sesgo de confirmación al forzarnos a considerar todas las fallas y oportunidades. Es la etapa de Scoping de la incertidumbre.
               </p>
               
               <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
-                <li>**Rigor Conceptual:** Permite la aplicación de los **Axiomas de la Probabilidad** para asegurar que el modelo es matemáticamente consistente.</li>
-                <li>**Función en BI:** Se utiliza para la creación de **árboles de decisión** y simulaciones de **riesgo extremo** (Ej. Modelado de "Cisnes Negros").</li>
-                <li>**Analogía:** Es la lista completa de ingredientes antes de hornear; si falta uno, el resultado es incierto.</li>
+                <li>Rigor Conceptual: Permite la aplicación de los Axiomas de la Probabilidad para asegurar que el modelo es matemáticamente consistente.</li>
+                <li>Función en BI: Se utiliza para la creación de árboles de decisión y simulaciones de riesgo extremo (Ej. Modelado de "Cisnes Negros").</li>
+                <li>Analogía: Es la lista completa de ingredientes antes de hornear; si falta uno, el resultado es incierto.</li>
               </ul>
             </div>
 
@@ -86,13 +86,13 @@ export default function LandingPage() {
                 <h3 className="text-2xl font-bold text-slate-900">Ojivas: El Umbral de Cumplimiento y Control de Proceso</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                La Ojiva (Curva de Frecuencia Acumulada) es la herramienta visual para medir la **velocidad de acumulación** de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica dónde están los **percentiles** (P90, P95).
+                La Ojiva (Curva de Frecuencia Acumulada) es la herramienta visual para medir la velocidad de acumulación de una variable (tiempo, costo, defecto). Su forma en 'S' nos indica dónde están los percentiles (P90, P95).
               </p>
               
               <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 ml-4 mt-4">
-                <li>**Aplicación Clave:** Fija **SLAs (Niveles de Servicio)**. Si el P90 de entrega es de 5 días, ese se convierte en el estándar de la promesa al cliente.</li>
-                <li>**Pendiente:** Una pendiente pronunciada en la curva indica un **control estricto y baja dispersión** en el proceso. Una pendiente plana y prolongada indica ineficiencia y alta variabilidad.</li>
-                <li>**Uso en Finanzas:** Determina el **Valor en Riesgo (VaR)** al identificar el umbral de pérdida acumulada.</li>
+                <li>Aplicación Clave: Fija SLAs (Niveles de Servicio). Si el P90 de entrega es de 5 días, ese se convierte en el estándar de la promesa al cliente.</li>
+                <li>Pendiente: Una pendiente pronunciada en la curva indica un control estricto y baja dispersión en el proceso. Una pendiente plana y prolongada indica ineficiencia y alta variabilidad.</li>
+                <li>Uso en Finanzas: Determina el Valor en Riesgo (VaR) al identificar el umbral de pérdida acumulada.</li>
               </ul>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function LandingPage() {
               <LineChart className="w-10 h-10 text-slate-900 mb-3" />
               <h4 className="font-bold text-xl mb-2 text-slate-900">2. Análisis de Percentiles y Umbrales</h4>
               <p className="text-sm text-gray-700">
-                Uso de Ojivas para migrar de la Frecuencia Absoluta a la Frecuencia Acumulada. Este paso crucial permite identificar el **P90 de servicio** o el **P95 de riesgo**, esencial para la planificación de recursos.
+                Uso de Ojivas para migrar de la Frecuencia Absoluta a la Frecuencia Acumulada. Este paso crucial permite identificar el P90 de servicio o el P95 de riesgo, esencial para la planificación de recursos.
               </p>
             </div>
             {/* Metodología 3 */}
@@ -131,7 +131,7 @@ export default function LandingPage() {
               <Code className="w-10 h-10 text-teal-500 mb-3" />
               <h4 className="font-bold text-xl mb-2 text-slate-900">3. Traducción y Comunicación Digital</h4>
               <p className="text-sm text-gray-700">
-                El resultado del análisis se traduce en formatos interactivos y lenguaje no técnico, permitiendo que el conocimiento pase del ingeniero al gerente de forma **clara y accionable**, cerrando la brecha de comunicación.
+                El resultado del análisis se traduce en formatos interactivos y lenguaje no técnico, permitiendo que el conocimiento pase del ingeniero al gerente de forma clara y accionable, cerrando la brecha de comunicación.
               </p>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                Se traza la frecuencia acumulada del tiempo de entrega de proveedores. Esto permite a la gerencia establecer un **inventario de seguridad óptimo** para cubrir el 95% de la demanda, reduciendo costos.
+                Se traza la frecuencia acumulada del tiempo de entrega de proveedores. Esto permite a la gerencia establecer un inventario de seguridad óptimo para cubrir el 95% de la demanda, reduciendo costos.
               </p>
               
 
@@ -177,7 +177,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                Se define el **universo de escenarios** de mercado posibles (tasas de interés, inflación) en simulaciones (ej. Monte Carlo). Esto asegura que los modelos de inversión optimicen el retorno ante cualquier riesgo, incluso el menos probable.
+                Se define el universo de escenarios de mercado posibles (tasas de interés, inflación) en simulaciones (ej. Monte Carlo). Esto asegura que los modelos de inversión optimicen el retorno ante cualquier riesgo, incluso el menos probable.
               </p>
               
             </div>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                Se grafica la frecuencia acumulada de la permanencia de los clientes. Esto permite identificar el **P25**, el punto en el tiempo donde el 25% de los clientes más propensos a irse aún están activos, detonando ofertas de retención justo a tiempo.
+                Se grafica la frecuencia acumulada de la permanencia de los clientes. Esto permite identificar el P25, el punto en el tiempo donde el 25% de los clientes más propensos a irse aún están activos, detonando ofertas de retención justo a tiempo.
               </p>
               
             </div>
